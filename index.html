@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- mobile navbar -->
+    <nav class="navbar smart-scroll navbar-expand-lg">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-terminal"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="ham"><i class="fas fa-bars fa-lg"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="container nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home-page"><i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio-page"><i class="fas fa-briefcase"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me"><i class="fas fa-female"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills-page"><i class="fas fa-pencil-ruler"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact-page"><i class="fas fa-envelope"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+
+      <div class="sidenav">
+          <a href="index.html" class="icon"><i class="fas fa-terminal fa-2x"></i></a>
+          <ul>
+            <a href="#home-page"><i class="fas fa-home fa-2x"></i></a>
+            <a href="#portfolio-page"><i class="fas fa-briefcase fa-2x"></i></a>
+            <a href="#about-me"><i class="fas fa-female fa-2x"></i></a>
+            <a href="#skills-page"><i class="fas fa-pencil-ruler fa-2x"></i></a>
+            <a href="#contact-page"><i class="fas fa-envelope fa-2x"></i></a>
+          </ul>
+      </div>
+        <!-- Home -->
+        <div class="content" id="home-page">
+          <div>
+              <h2 class='glow-blue'>My name is</h2> 
+              <h1 class="glow-purple">Zane Griffin</h1>
+              <h3 class="glow-pink">and I'm a software <br>engineer.</h3>
+              <a href="#portfolio-page">explore</a>
+          </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="content" id="portfolio-page">
+          <h2 class='glow-blue'>Portfolio Projects</h2>
+          <div class="portfolio">
+            
+          </div>
+          
+        </div>
+        
+        <!-- About -->
+        <div class="content" id="about-me">
+          <div>
+            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFpl-_Ri3kk5w/profile-displayphoto-shrink_200_200/0?e=1605744000&v=beta&t=-5PT_256Ngq7-8qAfuCn0BE20rrMkVWmhO92W4qNUFE"  alt="Photo of Zane Griffin" >
+            <h1 class="glow-purple">About Me</h1>
+            <p>As a software engineer, I pride myself on being adaptable in order to bring a project to life. I continuously wish to learn so I can better implement designs and interactivity. My persistent personality pushes me to sharpen my skills and hone my craftsmanship so that I can create unique applications.</p>
+          </div>
+        </div>  
+
+        <!-- Skills -->
+        <div class="content" id="skills-page">
+          <div>
+            <h2 class="glow-purple" >Skills</h2>
+            <p>blurb about always building knowledge</p>
+            <h3 class="glow-pink" >Languages</h3>
+            <p><i class="fab fa-html5"></i> HTML <i class="fab fa-css3-alt"></i> CSS <i class="fab fa-js"></i> JS</p>
+            <h3 class="glow-pink">Libraries</h3>
+            <p >Jquery Bootstrap</p>
+            <h3 class="glow-pink" >Design Tools</h3>
+            <p><i class="fab fa-adobe"></i> Photoshop <i class="fab fa-adobe"></i> Illustrator</p>
+          </div>
+        </div>
+
+          <!--Contact  -->
+          <div class="content" id="contact-page">
+            <div>
+              <h1 class="contact glow-blue">Contact</h1>
+              <form action='mailto:zanebgriffin@gmail.com' method='GET'>
+                  <input name='subject' type='text' value=" Subject">
+                  <textarea name='body' type="text" class="message"></textarea>
+                  <button type='submit'>Send!</button>
+              </form>
+              <p>Want to work together? Message me up above or contact me through social media.</p>
+            </div>
+          </div> 
+
+          
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>

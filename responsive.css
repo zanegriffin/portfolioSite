@@ -1,0 +1,256 @@
+/* navbar container */
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    
+}
+
+body{
+    height: 100%;
+}
+
+.smart-scroll{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+   
+  }
+  .scrolled-down{
+     transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+  .scrolled-up{
+     transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
+
+.navbar {
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    z-index: 1;
+}
+
+#home-page{
+    height: 100%;
+    display: grid;
+}
+#home-page div {
+    padding-top: 100px;
+    margin: auto;
+}
+#home-page div a{
+    padding: 0 10px 8px 10px;
+}
+#portfolio-page h2{
+    padding-top: 100px;
+}
+#contact-page{
+    height: 100vh;
+    padding-top: 100px;
+}
+#contact-page form{
+    padding: 0 30px;
+}
+#contact-page div p{
+    text-align: center;
+    width: 80%;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+#about-me{
+    height: 100vh;
+    padding-top: 100px;
+}
+#about-me div{
+    text-align: center;
+}
+#about-me div h1 {
+    padding-top: 10px;
+}
+#about-me div p{
+    padding: 0 30px;
+}
+#skills-page{
+    height: 100vh;
+    padding-top: 100px;
+}
+#skills-page div{
+    width: 100%;
+    text-align: center;
+}
+
+
+.sidenav {
+    display: none;
+}
+
+
+
+.portfolio{
+    grid-row: 2/3;
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(autofill, minmax(200px, 1fr));
+    grid-auto-rows: 500px;
+    grid-auto-flow: dense;
+}
+.card {
+    height: 100%;
+    width: 100%;
+    
+    background: none;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card-image {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    object-fit: cover;
+    grid-column: 1/3;
+}
+
+.card-title {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+}
+
+.btn {
+    margin: 10px;
+}
+
+@media screen and (min-width: 480px){
+
+    .portfolio{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-auto-rows: 300px;
+        grid-auto-flow: dense;
+        margin-left: 100px;
+    }
+
+   .navbar{
+       display: none;
+   }
+   
+    /* W3 for the side nav */
+    .sidenav {
+        height: 100%; 
+        width: 80px; 
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        bottom: 0;
+         /* Disable horizontal scroll */
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+    .sidenav ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding-top: 50px;
+    }
+
+    .sidenav a {
+        padding-bottom: 30px;
+    }
+
+    #about-me div{
+        width: 100%;
+        display: grid
+    }
+    #about-me div img {
+        margin: 0 auto;
+    }
+    #about-me div h1{
+        margin: 0 auto;
+    }
+    #about-me div p{
+        width: 400px;
+        margin: 0 auto;
+        padding-left: 50px;
+    }
+    #contact-page div form{
+        display: grid;
+        width: 300px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #contact-page div h1{
+        width: 400px;
+        margin: 0 auto;
+        width: 400px;
+    }
+    #contact-page div p{
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .portfolio{
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+
+    #contact-page div form{
+        width: 70%;
+    }
+
+    input, textarea, button {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    #about-me div{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #about-me div h1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        align-self: flex-end;
+        justify-content: flex-end;
+    }
+    #about-me div p {
+        max-width: 900px;
+        grid-column: 1/2;
+        margin: 0;
+        display: flex;
+        justify-self: flex-end;
+        padding-right: 0;
+    }
+    #about-me div img {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        margin: 0;
+        margin-top: 80px;
+        display: flex;
+        align-self: center;
+        margin-left: 20px;
+    }
+
+    
+}
+
+@media screen and (min-width: 1400px){
+    .portfolio{
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+    }
+}
