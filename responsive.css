@@ -56,6 +56,15 @@ body{
     width: 80%;
     padding-top: 20px;
     margin: 0 auto;
+    padding-bottom: 30px;
+}
+#contact-page div {
+    text-align: center;
+    margin: 0 auto;
+}
+#contact-page div a{
+    margin-top: 30px;
+    border: none;
 }
 #about-me{
     height: 100vh;

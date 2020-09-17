@@ -3,6 +3,10 @@
 font-family: 'Kodchasan', sans-serif;
 font-family: 'Poiret One', cursive; */
 
+.fa-linkedin{
+    color: #F038FF;
+}
+
 .portfolio {
     background-color:rgba(45, 39, 46, .50);
 }
@@ -312,5 +316,15 @@ footer {
     #skills-page div h2 {
         font-size: 60px;
     }
-    
+    #contact-page div p:first-of-type {
+        width: 400px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    #contact-page div p:first-of-type {
+        width: 500px;
+        font-size: 34px;
+    }
 }
