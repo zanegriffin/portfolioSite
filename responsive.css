@@ -94,9 +94,10 @@ body{
     width: 100%;
     text-align: center;
 }
-#skills-page div p {
+#skills-page div p:first-of-type {
     max-width: 500px;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .sidenav {
@@ -160,12 +161,11 @@ body{
     .sidenav {
         height: 100%; 
         width: 80px; 
-        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-        z-index: 1; /* Stay on top */
-        top: 0; /* Stay at the top */
+        position: fixed; 
+        z-index: 1; 
+        top: 0; 
         left: 0;
         bottom: 0;
-         /* Disable horizontal scroll */
         overflow-y: auto;
         display: flex;
         flex-direction: column;

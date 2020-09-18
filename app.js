@@ -1,17 +1,18 @@
 console.log('app.js')
 console.log('this is $', $)
 
+// pulled from bootstrap forum for the navbar
 if ($('.smart-scroll').length > 0) { // check if element exists
-    var last_scroll_top = 0;
+    var last_scroll_top = 0;//starting scroll position
     $(window).on('scroll', function() {
-        scroll_top = $(this).scrollTop();
+        scroll_top = $(this).scrollTop();//keeps track of scroll position
         if(scroll_top < last_scroll_top) {
             $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
         }
         else {
             $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
         }
-        last_scroll_top = scroll_top;
+        last_scroll_top = scroll_top;//keeps track of spot
     });
 }
 

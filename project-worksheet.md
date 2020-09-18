@@ -70,7 +70,34 @@ Examples
  JQUERY and Bootstrap 
 
 ## Code Snippet
+//This code snippet allows the mobile nav bar to disappear when scrolling.
+.smart-scroll{ //keeps bar at the top
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+   
+  }
+  .scrolled-down{ //moves the bar out of sight
+     transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+  .scrolled-up{ //brings bar back into sight
+     transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
 
+if ($('.smart-scroll').length > 0) { // check if element exists, always above 0
+    var last_scroll_top = 0;//starting scroll position
+    $(window).on('scroll', function() {
+        scroll_top = $(this).scrollTop();//keeps track of scroll position
+        if(scroll_top < last_scroll_top) {
+            $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+        }
+        else {
+            $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+        }
+        last_scroll_top = scroll_top;//keeps track of spot
+    });
+}
 
 ## Issues and Resolutions
 **ERROR**: cross-Origin Read Blocking (CORB) blocked cross-origin response <URL> with MIME type text/html
